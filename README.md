@@ -54,11 +54,11 @@ TODO: insert example style images here
 
 
 ### Generated, Styled Images
-![A generated, styled image](/generated_styled/1.png)
-![A generated, styled image](/generated_styled/1_him.png)
-![A generated, styled image](/generated_styled/1_style.png)
-![A generated, styled image](/generated_styled/2_style.png)
-![A generated, styled image](/generated_styled/3_rain_princess.png)
-![A generated, styled image](/generated_styled/4.png)
-![A generated, styled image](/generated_styled/Almost_Rivers.png)
-![A generated, styled image](/generated_styled/generated_140.0_2.png)
+![A generated, styled image](/example_images/generated_styled/1.png)
+![A generated, styled image](/example_images/generated_styled/1_him.png)
+![A generated, styled image](/example_images/generated_styled/1_style.png)
+![A generated, styled image](/example_images/generated_styled/2_style.png)
+![A generated, styled image](/example_images/generated_styled/3_rain_princess.png)
+![A generated, styled image](/example_images/generated_styled/4.png)
+![A generated, styled image](/example_images/generated_styled/Almost_Rivers.png)
+![A generated, styled image](/example_images/generated_styled/generated_140.0_2.png)
