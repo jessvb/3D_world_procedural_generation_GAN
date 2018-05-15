@@ -62,3 +62,13 @@ TODO: insert example style images here
 ![A generated, styled image](/example_images/generated_styled/4.png)
 ![A generated, styled image](/example_images/generated_styled/Almost_Rivers.png)
 ![A generated, styled image](/example_images/generated_styled/generated_140.0_2.png)
+
+### Generated 3D Models
+![A 3D model created from the height map and style images](/example_images/3D_views/1_3D_styled.PNG)
+![A 3D model created from the height map and style images](/example_images/3D_views/2_3D_styled.PNG)
+![A 3D model created from the height map and style images](/example_images/3D_views/3_3D_styled.PNG)
+![A 3D model created from the height map and style images](/example_images/3D_views/4_3D_styled.PNG)
+![A 3D model created from the height map and style images](/example_images/3D_views/5_3D_styled.PNG)
+![A 3D model created from the height map and style images](/example_images/3D_views/checkerboard_3D.PNG)
+![A 3D model created from the height map and style images](/example_images/3D_views/ravines.PNG)
+![A 3D model created from the height map and style images](/example_images/3D_views/small_hills_coloured.PNG)
