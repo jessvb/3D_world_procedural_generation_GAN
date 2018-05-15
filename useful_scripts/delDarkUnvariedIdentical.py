@@ -9,6 +9,7 @@ import numpy as np
 from PIL import Image
 
 # first delete duplicate images:
+# (note that this deletes the duplicates of the images provided in the folder that follows)
 imgsToDelFolder = 'duplicates/'
 imgsToDel = glob.glob(imgsToDelFolder + '*.png')
 
@@ -33,7 +34,7 @@ print('done duplicates!')
 
 # next, delete dark and/or unvaried images
 imgList = glob.glob('*.png')
-stdDevThresh = 2500             # good = 8000-13000, dark = 200-1800
+stdDevThresh = 6000             # good = 8000-13000, dark = 200-1800
 blackThresh = 9000
 
 for imgName in imgList:
@@ -57,5 +58,6 @@ for imgName in imgList:
         if (numBlack / float(n)) > 0.5:       # more than 50% of pixels are black
             print("deleting dark image:" + imgName)
             os.remove(imgName)
-    
+
+print('done unvaried!')
 
