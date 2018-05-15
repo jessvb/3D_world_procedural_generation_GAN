@@ -55,7 +55,7 @@ delDarkUnvariedIdentical.py: deletes images that are below a certain lightness t
 
 ### Input Style Images
 ![An input style image](/example_images/style_images/himalay.jpg)
-<img src = "/example_images/style_images/AS-Salt-Glaciers.jpg" height="400px" width="400px">
+<img src = "/example_images/style_images/AS-Salt-Glaciers.jpg" height="256px" width="256px">
 
 ### Generated, Styled Images
 ![A generated, styled image](/example_images/generated_styled/1.png)
