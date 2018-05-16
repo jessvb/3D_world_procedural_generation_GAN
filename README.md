@@ -30,6 +30,7 @@ delDarkUnvariedIdentical.py: deletes images that are below a certain lightness t
 * heightmap2stl.jar: converts a greyscale PNG image to a 3D STL file ([origin](http://www.instructables.com/id/Converting-Map-Height-Data-Into-3D-Tiles/)), which is useful for prototyping before bringing the height map into Unity 3D as a terrain
   * use this command to run the file:
   ```java -jar heightmap2stl.jar 'path to imagefile' 'height of model' 'height of base'```
+    * usually a model height of '100' and base height of '2' works quite well (and yes, use the quotes in the command)
 
 ## Example Images
 ### Input Terrain Images
