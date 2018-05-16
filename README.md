@@ -19,8 +19,12 @@ Each version of the GAN has incremental updates that change the way the GAN work
 * v10.0: fixes a discriminator loss bug by resetting the input images to begin from the start once they have all been fed into the GAN (and reverts the prediction probabilities to the previous version before 9.0)
 
 ## Style Transfer Network Files
-
-TODO: insert description of how the style transfer network files all work together
+* style.py takes in the input arguments and parses them to ensure that all arguments are valid and all filepaths exist. It then passes the training to optimize.py and evaluates on evaluation.py
+* optimize.py takes in a range of arguments and tries to create the most accurate output image based on the style and content images given. It has been altered to take in old models and checkpoints and resume training from this point. It uses vgg.py to find the contents and styles.
+* vgg.py is a file that incorporates vgg19 to parse through photos to find both the content and styles of images. 
+* transform.py holds the actual model that is being trained. It has been altered to upsample through image resizing rather than through convolutional transposing. 
+* evaluate.py creates the final image based on the trained models. It takes the trained model and passes in the new input image to output the stylized image. 
+* utils.py gets files and saves files to make the program more coherent. 
 
 ## Useful Scripts
 This folder contains scripts to help create a clean dataset.
@@ -51,8 +55,8 @@ delDarkUnvariedIdentical.py: deletes images that are below a certain lightness t
 ![A generated height map](/example_images/generated_terrain/checkerboarded.png)
 
 ### Input Style Images
-TODO: insert example style images here
-
+![An input style image](/example_images/style_images/himalay.jpg)
+<img src = "/example_images/style_images/AS-Salt-Glaciers.jpg" height="256px" width="256px">
 
 ### Generated, Styled Images
 ![A generated, styled image](/example_images/generated_styled/1.png)
