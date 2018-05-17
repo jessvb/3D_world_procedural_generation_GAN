@@ -21,15 +21,17 @@ Each version of the GAN has incremental updates that change the way the GAN work
 ## Style Transfer Network Files
 * style.py takes in the input arguments and parses them to ensure that all arguments are valid and all filepaths exist. It then passes the training to optimize.py and evaluates on evaluation.py
 * optimize.py takes in a range of arguments and tries to create the most accurate output image based on the style and content images given. It has been altered to take in old models and checkpoints and resume training from this point. It uses vgg.py to find the contents and styles.
-* vgg.py is a file that incorporates vgg19 to parse through photos to find both the content and styles of images. 
-* transform.py holds the actual model that is being trained. It has been altered to upsample through image resizing rather than through convolutional transposing. 
-* evaluate.py creates the final image based on the trained models. It takes the trained model and passes in the new input image to output the stylized image. 
-* utils.py gets files and saves files to make the program more coherent. 
+* vgg.py is a file that incorporates vgg19 to parse through photos to find both the content and styles of images.
+* transform.py holds the actual model that is being trained. It has been altered to upsample through image resizing rather than through convolutional transposing.
+* evaluate.py creates the final image based on the trained models. It takes the trained model and passes in the new input image to output the stylized image.
+* utils.py gets files and saves files to make the program more coherent.
 
 ## Useful Scripts
 This folder contains scripts to help create a clean dataset.
 delDarkUnvariedIdentical.py: deletes images that are below a certain lightness threshold, have low variation (e.g., all white or all black), or are identical to other images placed in a folder called "duplicates"
 * prepDataset.py: pickles images, preparing them to be input images for the GAN
+* scrapeMaps.py: retrieve map data automatically from the web using Selenium
+* manageSavedMaps.py: unzips maps and moves them to the correct folder. It deletes all other downloaded map-like files to save space
 * scaleToWidthxWidth: scales images to be a certain size
 * heightmap2stl.jar: converts a greyscale PNG image to a 3D STL file ([origin](http://www.instructables.com/id/Converting-Map-Height-Data-Into-3D-Tiles/)), which is useful for prototyping before bringing the height map into Unity 3D as a terrain
   * use this command to run the file:
