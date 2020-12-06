@@ -1,5 +1,5 @@
 # Procedural Generation of 3D Worlds
-This repository contains Generative Adversarial Network (GAN) and style transfer code that can be used to generate 3D worlds.
+This repository contains Generative Adversarial Network (GAN) and style transfer code that can be used to generate 3D worlds. See this  this [demo](https://www.mit.edu/~jessicav/6.S198/ProceduralGeneration/) to explore some of the generated worlds, and this [blog post](http://www.mit.edu/~jessicav/6.S198/Blog_Post/ProceduralGeneration.html) for more information about the project.
 
 ## GAN versions
 Each version of the GAN has incremental updates that change the way the GAN works. Each version creates quite varied landscapes due to different hyperparameters and network configurations; thus, each version is kept separately (not just in the git log) so that anyone can use any of the GAN networks easily, at any time. The following list describes the updates at each iteration (in lieu of a git log ;) ):
